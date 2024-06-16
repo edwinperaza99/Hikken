@@ -35,12 +35,11 @@ This application allows users to play a 2D fighting game directly in their brows
 
 ## Preview
 
-- To be updated:
-  ![Start_Image](./screenshots/Start_Screen_White_BG.png)
-  ![Character_Selections](./screenshots/Character-selections.png)
-  ![Background_Selections](./screesnhots/Background-selections.png)
-  ![Fight_Scene_1](./screenshots/Battle1.png)
-  ![Fight_Scene_2](./screenshots/Battle2.png)
+![Start_Image](/screenshots/Start_Screen_White_BG.png)
+![Character_Selections](/screenshots/Character-selections.png)
+![Background_Selections](/screenhots/Background-selections.png)
+![Fight_Scene_1](/screenshots/Battle1.png)
+![Fight_Scene_2](/screenshots/Battle2.png)
 
 ## Live Demo
 
