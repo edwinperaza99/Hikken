@@ -26,7 +26,7 @@ const Forest = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/background.png",
+	imageSrc: "/assets/background.png",
 };
 
 const Slum = {
@@ -34,7 +34,7 @@ const Slum = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/background_1.png",
+	imageSrc: "/assets/background_1.png",
 };
 
 const Hills = {
@@ -42,7 +42,7 @@ const Hills = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/background_2.png",
+	imageSrc: "/assets/background_2.png",
 	scale: 1,
 	offset: {
 		x: 0,
@@ -55,7 +55,7 @@ const City = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/background_3.png",
+	imageSrc: "/assets/background_3.png",
 };
 
 // Code to select stage
@@ -186,27 +186,29 @@ function collisionDetection({ character1, character2 }, currentFrame) {
 		character1.isAttacking = false;
 		//console.log("collision");
 		if (character1 === player) {
-			document.querySelector("#enemyHealth").style.width = character2.health + "%";
+			document.querySelector("#enemyHealth").style.width =
+				character2.health + "%";
 		} else {
-			document.querySelector("#playerHealth").style.width = character2.health + "%";
+			document.querySelector("#playerHealth").style.width =
+				character2.health + "%";
 		}
 	}
 }
 
 // loop to run the program and refresh the position of the players
 function animate() {
-	if(gameStopped) {
+	if (gameStopped) {
 		setTimeout(() => {
 			alreadyReturned = true;
-		}, 2000)
+		}, 2000);
 	}
 
-	if(alreadyReturned) {
-		return
+	if (alreadyReturned) {
+		return;
 	}
 
 	window.requestAnimationFrame(animate);
-	
+
 	c.fillStyle = "gray";
 	if (stageSelected === Hills) {
 		c.fillStyle = "rgba(35, 24, 5, 1)";
@@ -225,22 +227,17 @@ function animate() {
 	player.update();
 	enemy.update();
 
-	
 	playerAnimate();
 	enemyAnimate();
 
-	
 	//c.restore();
 	// TODO: framesCurrent is the frame where the animation occurs
 	// we can use a variable to change this for multiple characters
 	// if player misses
 	// NOTE: Code for player and enemy has been moved out to corresponding player and enemy files
-
-	
 }
 
 animate();
-
 
 // this function will calculate the winner state based on health bar
 // checks to see which health is lower and then choose the
@@ -307,7 +304,7 @@ window.addEventListener("keydown", (event) => {
 
 			case " ":
 				if (!playerMagicInProgress && !playerMagic2InProgress) {
-				player.attack();
+					player.attack();
 				}
 				break;
 			case "x":
@@ -318,7 +315,7 @@ window.addEventListener("keydown", (event) => {
 				break;
 
 			case "z":
-				if(playerMagicInProgress) {
+				if (playerMagicInProgress) {
 					break;
 				}
 
@@ -333,10 +330,10 @@ window.addEventListener("keydown", (event) => {
 				}
 				break;
 			case "c":
-				if(playerMagic2InProgress) {
+				if (playerMagic2InProgress) {
 					break;
 				}
-				
+
 				player.useSpecial2();
 				playerMagic2InProgress = true;
 				setTimeout(() => {
@@ -378,7 +375,7 @@ window.addEventListener("keydown", (event) => {
 				}
 				break;
 			case "p":
-				if(enemyMagicInProgress) {
+				if (enemyMagicInProgress) {
 					break;
 				}
 				enemy.useSpecial2();
@@ -396,7 +393,6 @@ window.addEventListener("keydown", (event) => {
 	}
 	//console.log(event.key);
 });
-
 
 // event listener for when user stops pressing movement key
 window.addEventListener("keyup", (event) => {
@@ -424,10 +420,9 @@ function pauseHandlerHelper() {
 	if (!alreadyReturned) {
 		alreadyReturned = true;
 		clearTimeout(timerId);
-	}
-	else {
-		if(gameStopped && alreadyReturned) {
-			return
+	} else {
+		if (gameStopped && alreadyReturned) {
+			return;
 		}
 		alreadyReturned = false;
 		animate();

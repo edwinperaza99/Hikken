@@ -292,7 +292,7 @@ const first = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/samurai.png",
+	imageSrc: "/assets/character_background/samurai.png",
 };
 
 const second = {
@@ -300,7 +300,7 @@ const second = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/wizard.png",
+	imageSrc: "/assets/character_background/wizard.png",
 };
 
 const third = {
@@ -308,7 +308,7 @@ const third = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/knight.png",
+	imageSrc: "/assets/character_background/knight.png",
 };
 
 const fourth = {
@@ -316,7 +316,7 @@ const fourth = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/viking.png",
+	imageSrc: "/assets/character_background/viking.png",
 };
 
 const fifth = {
@@ -324,7 +324,7 @@ const fifth = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/sorcerer.png",
+	imageSrc: "/assets/character_background/sorcerer.png",
 };
 
 const sixth = {
@@ -332,7 +332,7 @@ const sixth = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/ranger.png",
+	imageSrc: "/assets/character_background/ranger.png",
 };
 
 const seventh = {
@@ -340,7 +340,7 @@ const seventh = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/king.png",
+	imageSrc: "/assets/character_background/king.png",
 };
 
 const eighth = {
@@ -348,7 +348,7 @@ const eighth = {
 		x: 0,
 		y: 0,
 	},
-	imageSrc: "./assets/character_background/barbarian.png",
+	imageSrc: "/assets/character_background/barbarian.png",
 };
 
 //create backgrounds
@@ -407,7 +407,7 @@ function animate() {
 	playerMatt.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "1");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// second player
@@ -415,7 +415,7 @@ function animate() {
 	n.fillRect(0, 0, playerNat.width, playerNat.height);
 
 	background3.update(n);
-	
+
 	Natt.update(n);
 	Natt.switchSprite("idle");
 	playerNat.addEventListener("mouseover", () => {
@@ -424,7 +424,7 @@ function animate() {
 	playerNat.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "2");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// third player
@@ -441,7 +441,7 @@ function animate() {
 	playerKenji.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "3");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	//  fourth player
@@ -458,7 +458,7 @@ function animate() {
 	playerRiku.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "4");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// fifth player
@@ -475,7 +475,7 @@ function animate() {
 	playerPyro.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "5");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// sixth player
@@ -490,7 +490,7 @@ function animate() {
 	playerRay.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "6");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// seventh player
@@ -505,7 +505,7 @@ function animate() {
 	playerWiz.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "7");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// eighth player
@@ -520,7 +520,7 @@ function animate() {
 	playerKing.addEventListener("click", () => {
 		// add some code here to move to game
 		localStorage.setItem("selection", "8");
-		document.location.href = "./stage_select.html";
+		document.location.href = "/pages/stage_select.html";
 	});
 
 	// background.update();
