@@ -1,47 +1,55 @@
 # Hiken - Browser Battle
-Group 5's submission for CPSC 362, Group Project
 
-# Group Information
-* Names: Spencer Price, Joji Thomas, Ethan Marcelino, Edwin Peraza, Nghia Phan
-* Emails: spencerprice@csu.fullerton.edu, jthomas@csu.fullerton.edu, emarcelino@csu.fullerton.edu, edwinperaza@csu.fullerton.edu, ptnghia@csu.fullerton.edu
-* Roles: Product Ownder, Scrum Master, Developer 1, QA Tester, Developer 2
+## Overview
 
-# Instructions
-This app will allow users to play a browser based 2d fighting game.
+Hiken is a browser-based 2D fighting game where players can engage in thrilling battles using various characters and abilities. This game offers both single-player and multiplayer modes with unique attacks and special abilities for each character.
 
-# Controls
-User will use a standard qwerty keyboard to control the movement and attacks of
-the characters. The 'W' 'A' 'S' 'D' keys will control the players movement in
-the arena. ,
+## Instructions
 
-### Player
-- For player (left),
-- [x] 'Space Bar' to attack, to be continued...
+This application allows users to play a 2D fighting game directly in their browser. Follow the instructions below to get started and control your characters.
 
-- For playerspecial attacks
-- [x] healing effect (key x)
-- [x] melee attack (key c)
-- [x] ranged attack (key z)
+## Controls
 
-### Enemy
-- For enemy (right) (automatic by default),
-- [x] 'Enter' to attack
-- For special attacks
-- [x] healing effect (arrow down)
-- [x] fireball (key p)
+### Player (Left)
 
-# Attack Simulation:
-- Currently in testing ...
-- Attack simulation function named simulateAttack() can be found in [click here](./js/enemy.js)
-- The function uses random number to simulate attack, it can be adjusted accordingly to make game harder.
-- The larger the range of the if conditions, the more probability the actions will happen
-Ex: increasing the range of number to make enemy launch more attacks
+- **Movement**: Use the 'W', 'A', and 'D' keys.
+- **Attack**: Press 'Space Bar' to attack.
+- **Special Attacks**:
+  - Healing effect: Press 'X'
+  - Melee attack: Press 'C'
+  - Ranged attack: Press 'Z'
 
-# Preview
+### Enemy (Right) (Automatic by default)
+
+- **Movement**: Use 'Arrow Up', 'Arrow Left', and 'Arrow Right' keys.
+- **Attack**: Press 'Enter' to attack.
+- **Special Attacks**:
+  - Healing effect: Press 'Arrow Down'
+  - Fireball: Press 'P'
+
+## Attack Simulation
+
+- The attack simulation function, `simulateAttack()`, can be found in the [enemy.js](./js/enemy.js) file.
+- This function uses random numbers to simulate attacks and can be adjusted to change the game's difficulty.
+- To increase the probability of enemy attacks, expand the range of the conditional statements in the simulation function.
+
+## Preview
+
 - To be updated:
-![Start_Image](./for-later/Start_Screen_White_BG.png)
-![Character_Selections](./for-later/Character-selections.png)
-![Background_Selections](./for-later/Background-selections.png)
-![Fight_Scene_1](./for-later/Battle1.png)
-![Fight_Scene_2](./for-later/Battle2.png)
+  ![Start_Image](./screenshots/Start_Screen_White_BG.png)
+  ![Character_Selections](./screenshots/Character-selections.png)
+  ![Background_Selections](./screesnhots/Background-selections.png)
+  ![Fight_Scene_1](./screenshots/Battle1.png)
+  ![Fight_Scene_2](./screenshots/Battle2.png)
 
+## Live Demo
+
+Check out the live demo of the game deployed on GitHub Pages: [Hiken](https://edwinperaza99.github.io/Hikken/)
+
+## Team Information
+
+- Edwin Peraza: edwinperaza@csu.fullerton.edu
+- Spencer Price: spencerprice@csu.fullerton.edu
+- Joji Thomas: jthomas@csu.fullerton.edu
+- Ethan Marcelino: emarcelino@csu.fullerton.edu
+- Nghia Phan: ptnghia@csu.fullerton.edu
