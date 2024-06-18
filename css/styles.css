@@ -1,10 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	/*background: #25252a;*/
+	box-sizing: border-box;
+	font-family: "Press Start 2P", sans-serif;
+}
+
 body {
-	/* margin: 0; */
-	/* padding: 0; */
-	/* padding-left: 100px; */
-	/* padding-right: 100px; */
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
+	background-color: #4e4e4e;
+	text-align: center;
+	position: relative;
+	min-height: 100vh;
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+	font-family: "Road Rage", cursive;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	font-weight: 900px;
 }
 
 /* nav bar */
@@ -78,3 +98,27 @@ header {
 }
 
 /* end of nav bar */
+
+/* add footer to this page */
+footer {
+	background-color: #111;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+}
+
+.copyright {
+	background: black;
+	min-width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.copyright p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+	font-family: "Times New Roman", Times, serif;
+}
+/* end of footer */

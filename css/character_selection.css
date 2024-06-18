@@ -1,29 +1,20 @@
-h1 {
-	padding: 6px;
-}
-
-.container {
-	display: flex;
-	gap: 50px;
-	/* padding: 20px; */
-	justify-content: center;
-	padding-bottom: 30px;
+main {
+	padding: 0;
+	padding-bottom: 75px;
 }
 
 canvas {
 	border: 1px solid white;
 	border-radius: 5px;
-	height: 300px;
-	width: 200px;
+	width: 100%;
+	height: auto;
 }
 
 .characters {
-	display: flex;
-	gap: 50px;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding-bottom: 23px;
-}
-body {
-	padding-bottom: 56px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px; /* Adjust gap as needed */
+	padding-bottom: 5px;
+	padding-left: 20%; /* Add left and right padding for larger screens */
+	padding-right: 20%; /* Add left and right padding for larger screens */
 }

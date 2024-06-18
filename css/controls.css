@@ -1,131 +1,17 @@
-* {
-	margin: 0;
+main {
 	padding: 0;
-	/*background: #25252a;*/
-	box-sizing: border-box;
-	font-family: "Press Start 2P", sans-serif;
-}
-
-/* main body */
-h1 {
-	font-size: 100px;
-	font-family: "Road Rage", sans-serif;
-	margin-bottom: 0;
-	color: white;
-	/* adjust this later*/
-	margin-top: -1rem;
-}
-
-body {
-	text-align: center;
-	position: relative;
-	padding-bottom: 274px;
-	min-height: 100vh;
-	background-color: #4e4e4e;
-}
-
-/* end of main body */
-
-/* nav bar */
-li,
-a {
-	font-weight: 900;
-	font-size: 26px;
-	color: black;
-	text-decoration: none;
-	font-family: "Open Sans", sans-serif;
-	/* text-transform: uppercase; */
-}
-
-header {
+	min-height: calc(100vh - 70px);
 	display: flex;
-	background-color: #818181;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding-left: 200px;
-	padding-right: 200px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	/* padding: 30px 10%; */
+	place-content: center;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.logo {
-	cursor: pointer;
-	width: 281px;
-	height: 100px;
-}
-
-.navigation {
-	list-style: none;
-}
-
-.navigation li {
-	display: inline-block;
-	padding: 0px 20px;
-}
-
-.navigation li a {
-	transition: all 0.3s ease 0s;
-}
-
-.navigation li a:hover {
-	color: white;
-	font-size: 35px;
-}
-
-.link {
-	padding: 14px 25px;
-	font-size: 18px;
-	background-color: red;
-	color: white;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	font-family: "Press Start 2P", sans-serif;
-}
-
-.link:hover {
-	background-color: #818181;
-	color: #111;
-}
-
-/* end of nav bar */
-
-/* add footer to this page */
-footer {
-	background-color: #111;
-	color: white;
-	position: absolute;
-	bottom: 0;
-	min-width: 100%;
-}
-
-.copyright {
-	background: black;
-	min-width: 100%;
-	padding: 20px 0;
-	text-align: center;
-}
-
-.copyright p {
-	font-size: 10px;
-	word-spacing: 2px;
-	text-transform: capitalize;
-}
-
-.text {
-	font-size: 20px;
-	font-weight: 500;
-	color: white;
-	text-align: center;
-	margin-top: 20px;
-}
-
-/* end of footer */
 button {
-	margin: 10px;
-	width: 120px;
+	/* margin: 10px; */
+	width: 140px;
 	height: 30px;
 	color: black;
 	background-color: white;
