@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 
+/* global styles */
 * {
 	margin: 0;
 	padding: 0;
-	/*background: #25252a;*/
 	box-sizing: border-box;
 	font-family: "Press Start 2P", sans-serif;
 }
 
 body {
-	box-sizing: border-box;
-	font-family: "Open Sans", sans-serif;
 	background-color: #4e4e4e;
 	text-align: center;
 	position: relative;
@@ -26,6 +24,7 @@ h1 {
 	text-transform: uppercase;
 	font-weight: 900px;
 }
+/* end of global styles */
 
 /* nav bar */
 li,
